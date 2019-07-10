@@ -5,6 +5,7 @@ import "./App.css";
 
 // Components
 import SearchBar from "./components/layout/SearchBar";
+import LogItemList from "./components/logs/LogItemList";
 
 const App = () => {
   useEffect(() => {
@@ -14,6 +15,9 @@ const App = () => {
   return (
     <>
       <SearchBar />
+      <div className="container">
+        <LogItemList />
+      </div>
     </>
   );
 };
